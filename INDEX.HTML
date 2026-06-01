@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Avis clients</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+
+    <h1>⭐ Laissez votre avis</h1>
+    <p>Partagez votre expérience</p>
+
+    <form id="reviewForm">
+
+      <input type="text" id="name" placeholder="Votre nom" required>
+
+      <label>Type </label>
+      <select id="service" required>
+        <option value="">-- Choisir --</option>
+        <option>Camping-car</option>
+        <option>Fourgon</option>
+        <option>Van</option>
+        <option>Caravane</option>
+        <option>Voiture aménagée</option>
+      </select>
+
+      <label>Note globale</label>
+      <select id="rating" required>
+        <option value="">-- Choisir --</option>
+        <option value="5">⭐⭐⭐⭐⭐</option>
+        <option value="4">⭐⭐⭐⭐</option>
+        <option value="3">⭐⭐⭐</option>
+        <option value="2">⭐⭐</option>
+        <option value="1">⭐</option>
+      </select>
+
+      <textarea id="comment" placeholder="Votre avis..." required></textarea>
+
+      <button type="submit">Envoyer mon avis</button>
+
+    </form>
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
